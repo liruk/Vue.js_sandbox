@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<title>にばんめのVue.js</title>
+<script src="../vue.js"></script>
+<button id="b-button" v-bind:title="loggedInButton">Buy it……</button>
+<button id="bool-button" v-bind:disabled="!canBuy">cow</button>
+
+<div id="app">
+  <p>
+    {{items[0].price * items[0].quantity}}
+  </p>
+  <p>フィルタ処理例 {{10000000|numberWithDelimiter}}</p>
+</div>
+<script src="app_2.7.js">
+</script>
