@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <title>にばんめのVue.js</title>
 <script src="../vue.js"></script>
-<button id="b-button" v-bind:title="loggedInButton">Buy it……</button>
+
 
 <div id="app">
   <!--
@@ -30,7 +30,8 @@
   <p v-bind:class="!errorMessageClass">
     {{1000 | numberWithDelimiter}}円以上からご購入いただけます
   </p>
+  <button v-bind:disabled="!canBuy" v-on:click="doBuy">Buy it……</button>
 </div>
 </div>
-<script src="app_2.9.js">
+<script src="app_2.11.js">
 </script>
