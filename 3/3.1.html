@@ -1,0 +1,12 @@
+<script src = "../vue.js"></script>
+
+<ul id = "example">
+  <list-item></list-item>
+</ul>
+
+<script>
+  Vue.component('list-item',{
+    template: '<li>foo</li>'
+  })
+  new Vue({el : '#example' })
+</script>
